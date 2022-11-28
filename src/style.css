@@ -1,8 +1,47 @@
+body {
+  text-align: center;
+  background: black;
+}
 h1 {
   font-family: "Limelight", cursive;
+  font-size: 70px;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+  color: white;
 }
 
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+}
+
+h2 {
+  font-size: 21px;
+  position: absolute;
+  top: 46%;
+  width: 100%;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  background: white;
+  color: black;
+  padding: 20px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  position: absolute;
+  top: 58%;
+  left: 45%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+img {
+  width: 100%;
+  opacity: 34%;
+  min-width: 1100px;
 }
