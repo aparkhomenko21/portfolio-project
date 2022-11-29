@@ -72,6 +72,7 @@ p {
   max-width: 480px;
   margin-top: 90px;
   text-align: left;
+  padding: 0 0 0 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -91,6 +92,10 @@ p {
   .weather-app,
   .plant-based-page {
     text-align: center;
+  }
+
+  .plant-based-page {
+    padding: 0;
   }
 }
 
