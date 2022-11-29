@@ -11,12 +11,23 @@ h1 {
   color: white;
 }
 
+h2 {
+  color: white;
+  font-family: "Limelight", cursive;
+}
+
 p {
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  color: white;
 }
 
-h2 {
+.img-fluid {
+  max-width: 370px;
+  box-shadow: 0px 0px 5px 1px rgb(184, 184, 184);
+}
+
+.prime-page h2 {
   font-size: 21px;
   position: absolute;
   top: 46%;
@@ -26,7 +37,7 @@ h2 {
   font-weight: 300;
 }
 
-a {
+.prime-page a {
   background: white;
   color: black;
   padding: 20px 25px;
@@ -40,8 +51,37 @@ a {
   text-transform: capitalize;
 }
 
-img {
+.backgroud-img {
   width: 100%;
   opacity: 34%;
   min-width: 1100px;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+.project-description {
+  max-width: 480px;
+  margin-top: 90px;
+}
+
+@media (max-width: 390px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  .prime-page h2 {
+    font-size: 17px;
+    top: 52%;
+  }
+
+  .prime-page a {
+    top: 70%;
+    left: 34%;
+    font-size: 13px;
+  }
+
+  .backgroud-img {
+  }
 }
