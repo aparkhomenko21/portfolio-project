@@ -68,7 +68,7 @@ p {
   text-align: right;
 }
 
-.plant-based-page{
+.plant-based-page {
   max-width: 480px;
   margin-top: 90px;
   text-align: left;
@@ -83,23 +83,18 @@ p {
     top: 71%;
     left: 41%;
   }
+
   .container {
     margin-top: 1px;
   }
 
-  .weather-app {
-    text-align: center;
-    margin-left: 29px;
-  }
-
+  .weather-app,
   .plant-based-page {
     text-align: center;
-    margin-left: -28px;
   }
 }
 
 @media screen and (max-width: 600px) {
-
   h1 {
     font-size: 50px;
   }
@@ -111,12 +106,9 @@ p {
     line-height: 1.5;
   }
 
-
   .prime-page a {
     top: 70%;
     left: 33%;
     font-size: 16px;
   }
-
-
 }
