@@ -80,11 +80,13 @@ p {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
   .prime-page h2 {
-    top: 55%;
-    font-size: 18px;
+    top: 52%;
+    font-size: 16px;
+    padding: 0 100px;
+    line-height: 1.5;
   }
 
   .prime-page a {
