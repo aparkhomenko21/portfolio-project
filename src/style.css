@@ -4,7 +4,7 @@ body {
 }
 h1 {
   font-family: "Limelight", cursive;
-  font-size: 70px;
+  font-size: 72px;
   position: absolute;
   top: 35%;
   width: 100%;
@@ -62,12 +62,19 @@ p {
   margin-top: 100px;
 }
 
-.project-description {
+.weather-app {
   max-width: 480px;
   margin-top: 90px;
+  text-align: right;
 }
 
-@media screen and (max-width: 746px) {
+.plant-based-page{
+  max-width: 480px;
+  margin-top: 90px;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
   .prime-page h2 {
     top: 58%;
   }
@@ -76,12 +83,27 @@ p {
     top: 71%;
     left: 41%;
   }
+  .container {
+    margin-top: 1px;
+  }
+
+  .weather-app {
+    text-align: center;
+    margin-left: 29px;
+  }
+
+  .plant-based-page {
+    text-align: center;
+    margin-left: -8px;
+  }
 }
 
 @media screen and (max-width: 600px) {
+
   h1 {
     font-size: 50px;
   }
+
   .prime-page h2 {
     top: 52%;
     font-size: 16px;
@@ -89,9 +111,12 @@ p {
     line-height: 1.5;
   }
 
+
   .prime-page a {
     top: 70%;
     left: 33%;
     font-size: 16px;
   }
+
+
 }
