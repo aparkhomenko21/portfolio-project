@@ -13,6 +13,13 @@ p {
   font-weight: 300;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-family: var(--main-font);
+    font-weight: 300;
+}
+
 .prime-page h1 {
   font-size: 72px;
   position: absolute;
@@ -22,15 +29,12 @@ p {
 }
 
 .see-portfolio-link {
-  text-decoration: none;
-  color: white;
   position: absolute;
   text-align: center;
   top: 92%;
   left: 46%;
   text-shadow: 0px 0px 20px rgb(184, 184, 184);
-  font-family: var(--main-font);
-  font-weight: 300;
+  text-transform: capitalize;
 }
 
 a:hover {
@@ -59,13 +63,9 @@ a:hover {
   color: black;
   padding: 20px 25px;
   border-radius: 30px;
-  text-decoration: none;
   position: absolute;
   top: 58%;
   left: 46%;
-  font-family: var(--main-font);
-  font-weight: 300;
-  text-transform: capitalize;
 }
 
 .backgroud-img {
@@ -102,15 +102,12 @@ a:hover {
 
 .project-link {
   color: white;
-  padding: 12px 26px;
+  padding: 15px 26px;
   border: 1px solid white;
   border-radius: 30px;
-  text-decoration: none;
-  font-family: var(--main-font);
-  font-weight: 300;
-  text-transform: capitalize;
   font-size: 14px;
   margin: 4px;
+  text-transform: capitalize;
 }
 
 .about-me h1 {
@@ -128,24 +125,28 @@ a:hover {
   color: black;
   padding: 19px 22px;
   border-radius: 30px;
-  text-decoration: none;
-  font-family: var(--main-font);
-  font-weight: 300;
-  text-transform: capitalize;
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .my-photo {
   max-width: 450px;
   margin: 30px;
+
 }
 .about-me {
   max-width: 500px;
 }
 
-.work-page h1 {
+.work-page h1, .contact-page h1  {
   font-size: 60px;
 }
+
+.contact-page p, i{
+font-family: "Limelight", cursive;
+font-size: 20px;
+}
+
 
 @media screen and (max-width: 768px) {
   .prime-page h2 {
