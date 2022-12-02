@@ -1,17 +1,16 @@
 body {
   background: black;
+  color: white;
 }
 
 h1,
-h2 {
+h2,h3 {
   font-family: "Limelight", cursive;
-  color: white;
 }
 
 p {
   font-family: var(--main-font);
   font-weight: 300;
-  color: white;
 }
 
 .prime-page h1 {
@@ -23,8 +22,8 @@ p {
 }
 
 .see-portfolio-link {
-  color: white;
   text-decoration: none;
+  color: white;
   position: absolute;
   text-align: center;
   top: 92%;
@@ -141,7 +140,11 @@ a:hover {
   margin: 30px;
 }
 .about-me {
-      max-width: 500px;
+  max-width: 500px;
+}
+
+.work-page h1 {
+  font-size: 60px;
 }
 
 @media screen and (max-width: 768px) {
