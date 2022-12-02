@@ -1,44 +1,45 @@
 body {
-  text-align: center;
   background: black;
 }
-h1 {
+
+h1,
+h2 {
   font-family: "Limelight", cursive;
+  color: white;
+}
+
+p {
+  font-family: var(--main-font);
+  font-weight: 300;
+  color: white;
+}
+
+.prime-page h1 {
   font-size: 72px;
   position: absolute;
   top: 35%;
   width: 100%;
-  color: white;
+  text-align: center;
 }
 
-h2 {
-  color: white;
-  font-family: "Limelight", cursive;
-}
-
-p {
-  font-family: "Poppins", sans-serif;
-  font-weight: 300;
-  color: white;
-}
-
-.projects-link  {
+.see-portfolio-link {
   color: white;
   text-decoration: none;
   position: absolute;
+  text-align: center;
   top: 92%;
   left: 46%;
   text-shadow: 0px 0px 20px rgb(184, 184, 184);
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-weight: 300;
 }
 
 a:hover {
-    color: white;
-    text-shadow: 0px 0px 20px white;
+  color: white;
+  text-shadow: 0px 0px 20px white;
 }
 
-.img-fluid {
+.project-photo {
   max-width: 370px;
   box-shadow: 0px 0px 5px 1px rgb(184, 184, 184);
 }
@@ -48,9 +49,9 @@ a:hover {
   position: absolute;
   top: 46%;
   width: 100%;
-  color: white;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   font-weight: 300;
+  text-align: center;
 }
 
 .prime-page a {
@@ -62,8 +63,8 @@ a:hover {
   text-decoration: none;
   position: absolute;
   top: 58%;
-  left: 45%;
-  font-family: "Poppins", sans-serif;
+  left: 46%;
+  font-family: var(--main-font);
   font-weight: 300;
   text-transform: capitalize;
 }
@@ -91,6 +92,58 @@ a:hover {
   padding: 0 0 0 35px;
 }
 
+.arrow {
+  font-size: 27px;
+  line-height: 0;
+}
+
+:root {
+  --main-font: "Poppins", sans-serif;
+}
+
+.project-link {
+  color: white;
+  padding: 12px 26px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 4px;
+}
+
+.about-me h1 {
+  font-size: 50px;
+}
+
+.about-me h2 {
+  font-family: var(--main-font);
+  font-size: 19px;
+  padding: 0 0 20px;
+}
+
+.about-me a {
+  background: white;
+  color: black;
+  padding: 19px 22px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-family: var(--main-font);
+  font-weight: 300;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.my-photo {
+  max-width: 450px;
+  margin: 30px;
+}
+.about-me {
+      max-width: 500px;
+}
+
 @media screen and (max-width: 768px) {
   .prime-page h2 {
     top: 58%;
@@ -113,6 +166,14 @@ a:hover {
   .plant-based-page {
     padding: 0;
   }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .my-photo {
+    margin-top: 60px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -132,9 +193,4 @@ a:hover {
     left: 33%;
     font-size: 16px;
   }
-}
-
-.arrow {
-    font-size: 30px;
-    line-height: 0;
 }
