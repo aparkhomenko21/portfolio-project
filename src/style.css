@@ -4,7 +4,8 @@ body {
 }
 
 h1,
-h2,h3 {
+h2,
+h3 {
   font-family: "Limelight", cursive;
 }
 
@@ -14,10 +15,10 @@ p {
 }
 
 a {
-    text-decoration: none;
-    color: white;
-    font-family: var(--main-font);
-    font-weight: 300;
+  text-decoration: none;
+  color: white;
+  font-family: var(--main-font);
+  font-weight: 300;
 }
 
 .prime-page h1 {
@@ -132,21 +133,34 @@ a:hover {
 .my-photo {
   max-width: 450px;
   margin: 30px;
-
 }
 .about-me {
   max-width: 500px;
 }
 
-.work-page h1, .contact-page h1  {
+.work-page h1,
+.contact-page h1 {
   font-size: 60px;
 }
 
-.contact-page p, i{
-font-family: "Limelight", cursive;
-font-size: 20px;
+.contact-page p,
+i {
+  font-family: "Limelight", cursive;
+  font-size: 20px;
 }
 
+.navbar {
+  background: black !important;
+  font-weight: 300;
+}
+
+.navbar a {
+  padding: 10px 40px !important;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
 
 @media screen and (max-width: 768px) {
   .prime-page h2 {
