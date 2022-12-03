@@ -135,6 +135,11 @@ footer i {
   font-size: 26px;
 }
 
+footer p,
+footer p a {
+  font-size: 10px;
+}
+
 a:hover {
   color: white;
   text-shadow: 0px 0px 20px white;
