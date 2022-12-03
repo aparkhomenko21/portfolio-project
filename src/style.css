@@ -3,9 +3,13 @@ body {
   color: white;
 }
 
+h1 {
+    font-size: 60px;
+} 
+
 h1,
 h3 {
-  font-family: "Limelight", cursive;
+  font-family: var(--heading-font);
 }
 
 p,
@@ -14,121 +18,24 @@ h2 {
   font-weight: 300;
 }
 
+h2 {
+    font-size: 21px;
+}
+
 a {
   text-decoration: none;
   color: white;
   font-family: var(--main-font);
   font-weight: 300;
-  transition: all 100ms ease-in-out;
+  transition: var(--main-font);
+}
+
+img {
+    transition: var(--transition);
 }
 
 hr {
   opacity: 100;
-}
-
-.img-fluid {
-  max-width: 90%;
-}
-
-.prime-page h1 {
-  font-size: 72px;
-  position: absolute;
-  top: 35%;
-  width: 100%;
-  text-align: center;
-}
-
-.prime-page-link {
-  position: absolute;
-  top: 58%;
-}
-
-.see-portfolio-link {
-  position: relative;
-  top: -150px;
-  left: 1%;
-  text-transform: capitalize;
-}
-
-a:hover {
-  color: white;
-  text-shadow: 0px 0px 20px white;
-}
-
-.prime-page h2 {
-  font-size: 21px;
-  position: absolute;
-  top: 46%;
-  width: 100%;
-}
-
-.main-button {
-  background: white;
-  color: black;
-  padding: 20px 25px;
-  border-radius: 30px;
-  text-transform: capitalize;
-}
-
-.main-button:hover {
-  color: black;
-}
-
-.button:hover {
-  box-shadow: 0px 0px 25px 1px rgb(184, 184, 184);
-}
-
-.backgroud-img {
-  width: 100%;
-  opacity: 34%;
-  min-height: 790px;
-}
-
-.my-photo {
-  max-height: 600px;
-  min-width: 450px;
-}
-
-.container {
-  margin-top: 80px;
-}
-
-.description {
-  max-width: 500px;
-  margin-top: 40px;
-}
-
-.arrow {
-  font-size: 27px;
-  line-height: 0;
-}
-
-:root {
-  --main-font: "Poppins", sans-serif;
-}
-
-.secondary-button {
-  padding: 15px 26px;
-  border: 1px solid white;
-  border-radius: 30px;
-  font-size: 14px;
-  margin: 4px;
-  text-transform: capitalize;
-}
-
-.description h1 {
-  font-size: 50px;
-}
-
-.work-page h1,
-.contact-page h1 {
-  font-size: 60px;
-}
-
-.contact-page p,
-i {
-  font-family: "Limelight", cursive;
-  font-size: 20px;
 }
 
 .navbar {
@@ -144,6 +51,105 @@ i {
   flex-grow: 0;
 }
 
+.container {
+  margin-top: 80px;
+}
+
+.backgroud-img {
+  width: 100%;
+  opacity: 34%;
+  min-height: 790px;
+}
+
+.prime-page h1 {
+  font-size: 72px;
+  position: absolute;
+  top: 35%;
+  width: 100%;
+}
+
+.prime-page h2 {
+  position: absolute;
+  top: 46%;
+  width: 100%;
+}
+
+.main-button {
+  background: white;
+  color: black;
+  padding: 20px 25px;
+  border-radius: 30px;
+  text-transform: capitalize;
+}
+
+.prime-page-button {
+  position: absolute;
+  top: 58%;
+}
+
+.see-portfolio-link {
+  position: relative;
+  top: -150px;
+  left: 1%;
+  text-transform: capitalize;
+}
+
+.arrow {
+  font-size: 27px;
+  line-height: 0;
+}
+
+.description {
+  max-width: 500px;
+}
+
+.description h1 {
+  font-size: 50px;
+}
+
+.secondary-button {
+  padding: 15px 26px;
+  border: 1px solid white;
+  border-radius: 30px;
+  font-size: 14px;
+  margin: 4px;
+  text-transform: capitalize;
+}
+
+.img-fluid {
+  max-width: 90%;
+}
+
+.my-photo {
+  max-height: 600px;
+  min-width: 450px;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 0px 0px 20px white;
+}
+
+.main-button:hover {
+  color: black;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 25px 1px rgb(184, 184, 184);
+}
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --heading-font: "Limelight", cursive;
+  --transition: transition: all 100ms ease-in-out;
+}
+
+.contact-page p,
+i {
+  font-family: var(--heading-font);
+  font-size: 20px;
+}
+
 footer a {
   font-size: 20px;
 }
@@ -157,12 +163,12 @@ footer i {
     top: 58%;
   }
 
-  .prime-page-link {
+  .prime-page-button {
     top: 70%;
   }
 
   .container {
-    margin-top: 0;
+    margin-top: 50px;
   }
 
   body,
@@ -170,30 +176,33 @@ footer i {
     text-align: center !important;
   }
 
+  .img-fluid {
+    margin: 60px 0 60px; 
+  }
+
   .my-photo {
-    margin-top: 60px;
+
+    margin: 0 !important
   }
 
   .contact-page {
     text-align: center;
-    margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  h1 {
-    font-size: 50px;
+  .prime-page h1 {
+    font-size: 57px;
   }
 
   .prime-page h2 {
-    top: 52%;
+    top: 53%;
     font-size: 16px;
     padding: 0 50px;
     line-height: 1.5;
   }
 
-  .prime-page-link {
-    top: 70%;
+  .prime-page-button {
     font-size: 16;
   }
 }
