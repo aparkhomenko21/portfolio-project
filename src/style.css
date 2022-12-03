@@ -4,12 +4,12 @@ body {
 }
 
 h1,
-h2,
 h3 {
   font-family: "Limelight", cursive;
 }
 
-p {
+p,
+h2 {
   font-family: var(--main-font);
   font-weight: 300;
 }
@@ -20,6 +20,10 @@ a {
   font-family: var(--main-font);
   font-weight: 300;
   transition: all 100ms ease-in-out;
+}
+
+hr {
+  opacity: 100;
 }
 
 .img-fluid {
@@ -34,11 +38,15 @@ a {
   text-align: center;
 }
 
-.see-portfolio-link {
+.prime-page-link {
   position: absolute;
-  text-align: center;
-  top: 92%;
-  left: 46%;
+  top: 58%;
+}
+
+.see-portfolio-link {
+  position: relative;
+  top: -150px;
+  left: 1%;
   text-transform: capitalize;
 }
 
@@ -52,9 +60,6 @@ a:hover {
   position: absolute;
   top: 46%;
   width: 100%;
-  font-family: var(--main-font);
-  font-weight: 300;
-  text-align: center;
 }
 
 .main-button {
@@ -69,19 +74,10 @@ a:hover {
   color: black;
 }
 
-.prime-page a {
-  position: absolute;
-  top: 58%;
-  left: 45%;
-}
-
 .button:hover {
   box-shadow: 0px 0px 25px 1px rgb(184, 184, 184);
 }
 
-.about-me {
-  max-width: 500px;
-}
 .backgroud-img {
   width: 100%;
   opacity: 34%;
@@ -89,9 +85,8 @@ a:hover {
 }
 
 .my-photo {
-  min-height: 530px;
   max-height: 600px;
-  min-width: 430px;
+  min-width: 450px;
 }
 
 .container {
@@ -125,12 +120,6 @@ a:hover {
   font-size: 50px;
 }
 
-.about-me h2 {
-  font-family: var(--main-font);
-  font-size: 18px;
-  padding: 0 0 20px;
-}
-
 .work-page h1,
 .contact-page h1 {
   font-size: 60px;
@@ -147,7 +136,7 @@ i {
   font-weight: 300;
 }
 
-.navbar a {
+.nav-link {
   padding: 10px 40px !important;
 }
 
@@ -155,31 +144,39 @@ i {
   flex-grow: 0;
 }
 
+footer a {
+  font-size: 20px;
+}
+
+footer i {
+  font-size: 26px;
+}
+
 @media screen and (max-width: 768px) {
   .prime-page h2 {
     top: 58%;
   }
 
-  .prime-page a {
-    top: 71%;
-    left: 41%;
+  .prime-page-link {
+    top: 70%;
   }
 
   .container {
-    margin-top: 1px;
+    margin-top: 0;
   }
 
+  body,
   .description {
     text-align: center !important;
   }
 
   .my-photo {
     margin-top: 60px;
-    margin-left: 0 !important;
   }
 
-  .see-portfolio-link {
-    left: 43%;
+  .contact-page {
+    text-align: center;
+    margin-top: 50px;
   }
 }
 
@@ -195,9 +192,8 @@ i {
     line-height: 1.5;
   }
 
-  .prime-page a {
+  .prime-page-link {
     top: 70%;
-    left: 33%;
-    font-size: 16px;
+    font-size: 16;
   }
 }
