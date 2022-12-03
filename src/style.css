@@ -19,6 +19,11 @@ a {
   color: white;
   font-family: var(--main-font);
   font-weight: 300;
+  transition: all 100ms ease-in-out;
+}
+
+.img-fluid {
+  max-width: 90%;
 }
 
 .prime-page h1 {
@@ -34,18 +39,12 @@ a {
   text-align: center;
   top: 92%;
   left: 46%;
-  text-shadow: 0px 0px 20px rgb(184, 184, 184);
   text-transform: capitalize;
 }
 
 a:hover {
   color: white;
   text-shadow: 0px 0px 20px white;
-}
-
-.project-photo {
-  max-width: 370px;
-  box-shadow: 0px 0px 5px 1px rgb(184, 184, 184);
 }
 
 .prime-page h2 {
@@ -58,38 +57,50 @@ a:hover {
   text-align: center;
 }
 
-.prime-page a {
+.main-button {
   background: white;
-  display: block;
   color: black;
   padding: 20px 25px;
   border-radius: 30px;
-  position: absolute;
-  top: 58%;
-  left: 46%;
+  text-transform: capitalize;
 }
 
+.main-button:hover {
+  color: black;
+}
+
+.prime-page a {
+  position: absolute;
+  top: 58%;
+  left: 45%;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 25px 1px rgb(184, 184, 184);
+}
+
+.about-me {
+  max-width: 500px;
+}
 .backgroud-img {
   width: 100%;
   opacity: 34%;
   min-height: 790px;
 }
 
+.my-photo {
+  min-height: 530px;
+  max-height: 600px;
+  min-width: 430px;
+}
+
 .container {
-  margin-top: 100px;
+  margin-top: 80px;
 }
 
-.weather-app {
-  max-width: 480px;
-  margin-top: 90px;
-  text-align: right;
-}
-
-.plant-based-page {
-  max-width: 480px;
-  margin-top: 90px;
-  text-align: left;
-  padding: 0 0 0 35px;
+.description {
+  max-width: 500px;
+  margin-top: 40px;
 }
 
 .arrow {
@@ -101,8 +112,7 @@ a:hover {
   --main-font: "Poppins", sans-serif;
 }
 
-.project-link {
-  color: white;
+.secondary-button {
   padding: 15px 26px;
   border: 1px solid white;
   border-radius: 30px;
@@ -111,31 +121,14 @@ a:hover {
   text-transform: capitalize;
 }
 
-.about-me h1 {
+.description h1 {
   font-size: 50px;
 }
 
 .about-me h2 {
   font-family: var(--main-font);
-  font-size: 19px;
+  font-size: 18px;
   padding: 0 0 20px;
-}
-
-.about-me a {
-  background: white;
-  color: black;
-  padding: 19px 22px;
-  border-radius: 30px;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-.my-photo {
-  max-width: 450px;
-  margin: 30px;
-}
-.about-me {
-  max-width: 500px;
 }
 
 .work-page h1,
@@ -176,21 +169,17 @@ i {
     margin-top: 1px;
   }
 
-  .weather-app,
-  .plant-based-page {
-    text-align: center;
-  }
-
-  .plant-based-page {
-    padding: 0;
-  }
-
-  .about-me {
-    text-align: center;
+  .description {
+    text-align: center !important;
   }
 
   .my-photo {
     margin-top: 60px;
+    margin-left: 0 !important;
+  }
+
+  .see-portfolio-link {
+    left: 43%;
   }
 }
 
