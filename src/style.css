@@ -25,10 +25,9 @@ a {
   text-decoration: none;
   color: white;
   font-family: var(--main-font);
-  transition: var(--transition);
 }
 
-img {
+a img {
   transition: var(--transition);
 }
 
@@ -97,11 +96,11 @@ hr {
 }
 
 .description {
-  max-width: 500px;
+  max-width: 550px;
 }
 
 .description h1 {
-  font-size: 50px;
+  font-size: 43px;
 }
 
 .secondary-button {
@@ -119,7 +118,7 @@ hr {
 
 .my-photo {
   max-height: 600px;
-  min-width: 450px;
+  min-width: 420px;
 }
 
 .contact-page p,
@@ -139,6 +138,7 @@ footer i {
 a:hover {
   color: white;
   text-shadow: 0px 0px 20px white;
+  transition: var(--transition);
 }
 
 .button:hover {
