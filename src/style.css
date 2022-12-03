@@ -4,8 +4,8 @@ body {
 }
 
 h1 {
-    font-size: 60px;
-} 
+  font-size: 60px;
+}
 
 h1,
 h3 {
@@ -19,7 +19,7 @@ h2 {
 }
 
 h2 {
-    font-size: 21px;
+  font-size: 21px;
 }
 
 a {
@@ -27,11 +27,11 @@ a {
   color: white;
   font-family: var(--main-font);
   font-weight: 300;
-  transition: var(--main-font);
+  transition: var(--transition);
 }
 
 img {
-    transition: var(--transition);
+  transition: var(--transition);
 }
 
 hr {
@@ -52,7 +52,7 @@ hr {
 }
 
 .container {
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .backgroud-img {
@@ -125,25 +125,6 @@ hr {
   min-width: 450px;
 }
 
-a:hover {
-  color: white;
-  text-shadow: 0px 0px 20px white;
-}
-
-.main-button:hover {
-  color: black;
-}
-
-.button:hover {
-  box-shadow: 0px 0px 25px 1px rgb(184, 184, 184);
-}
-
-:root {
-  --main-font: "Poppins", sans-serif;
-  --heading-font: "Limelight", cursive;
-  --transition: transition: all 100ms ease-in-out;
-}
-
 .contact-page p,
 i {
   font-family: var(--heading-font);
@@ -158,6 +139,25 @@ footer i {
   font-size: 26px;
 }
 
+a:hover {
+  color: white;
+  text-shadow: 0px 0px 20px white;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 25px 1px rgb(184, 184, 184);
+}
+
+.main-button:hover {
+  color: black;
+}
+
+:root {
+  --main-font: "Poppins", sans-serif;
+  --heading-font: "Limelight", cursive;
+  --transition: all 100ms ease-in-out;
+}
+
 @media screen and (max-width: 768px) {
   .prime-page h2 {
     top: 58%;
@@ -167,32 +167,26 @@ footer i {
     top: 70%;
   }
 
-  .container {
-    margin-top: 50px;
-  }
-
   body,
   .description {
     text-align: center !important;
   }
 
   .img-fluid {
-    margin: 60px 0 60px; 
+    margin: 60px 0 60px;
   }
 
+  .text-end {
+    text-align: center !important;
+  }
   .my-photo {
-
-    margin: 0 !important
-  }
-
-  .contact-page {
-    text-align: center;
+    min-width: 300px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .prime-page h1 {
-    font-size: 57px;
+    font-size: 56px;
   }
 
   .prime-page h2 {
